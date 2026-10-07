@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+</head>
+<body>
+    <h1>hello, world</h1>
+    <h2>這是我的<strong>第一個</strong>網頁</h2>
+    <a href="https://www.youtube.com" target="_blank">youtube</a>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+   <form id="orderform">
+    <!--文字與email輸入-->
+    <p>
+    <label for="username">訂購人姓名:</label>
+    <input type="text" id="username" placeholder="請輸入姓名" required>
+    <label for="email">電子郵件:</label>
+    <input type="email" id="email" placeholder="example@mail.com" required>
+    <input type="submit" value="提交">
+</p>
+<p>
+    <label for = "productSelect">選擇商品:</label>
+    <select id="productSelect" required>
+        <option value="">請選擇商品</option>
+        <option value="headphones">Standard 款</option>
+        <option value="phonecase">pro edition 旗艦款</option>
+    </select>
+</p>
+<p>
+    <label for="quantity">購買數量(1-10):</label>
+    <input type="number" id="quantity" min="1" max="10" value="1" required>
+</p>
+<p>配送方式:
+    <input type="radio" id="home" name="delivery" value="home" checked>
+    <label for="home">宅配</label>
+    <input type="radio" id="store" name="delivery" value="store"> 
+    <label for="store">超商取貨</label>
+</p>
+<p>
+      <img src="airpods-pro-3.JPG" alt="airPods" width="300">
+</p>
+<p>加購服務:
+    <input type="checkbox" id="warranty" name="warranty" value="warranty">
+    <label for="warranty">延長保固(+500元)</label>
+</p>
+<button type="submit">提交訂單</button>
+<!-- 音訊播放範例 -->
+<audio controls>
+<source src="audio/preview.mp3" type="audio/mpeg">
+您的瀏覽器不支援音訊播放。
+</audio>
+<!-- 影片播放範例 -->
+<video width="480" controls poster="images/cover.jpg">
+<source src="video.mp4" type="video/mp4">
+您的瀏覽器不支援影片播放。
+</video>
+</form>
+    <footer>&copy;, 2026大一ai實驗製作用 </footer>
+</body>
+</html>
